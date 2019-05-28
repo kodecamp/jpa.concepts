@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+  <persistence-unit name="CollegeApp" transaction-type="RESOURCE_LOCAL">
+    <!-- Enable this for uni-directional many-to-one -->
+    <!-- Enable this for bi-directional many-to-one -->
+    <!--<class>com.kodecamp.persist.entities.StudentV2</class>-->
+    <!--<class>com.kodecamp.persist.entities.CourseV2</class>-->
+    <class>com.kodecamp.persist.entities.CourseV1</class>
+    <class>com.kodecamp.persist.entities.StudentV1</class>
+    <properties>
+      <property name="javax.persistence.jdbc.driver" value="org.h2.Driver"/>
+      <!--            <property name="javax.persistence.jdbc.url"
+            value="jdbc:h2:tcp://localhost/~/collegeappdb" />-->
+      <property name="javax.persistence.jdbc.url" value="jdbc:h2:tcp://localhost/~/collegeappdb"/>
+      <property name="javax.persistence.jdbc.user" value="kodecamp"/>
+      <property name="javax.persistence.jdbc.password" value="kodecamp"/>
+      <!-- EclipseLink should create the database schema automatically -->
+      <!-- valid values are : drop-and-create-tables,create-tables -->
+      <!-- NOTE : REMOVE THIS LINE AFTER FIRST RUN -->
+      <!--<property name="eclipselink.ddl-generation" value="drop-and-create-tables"/>-->
+      <!-- valid values : database,sql-script, both-->
+      <property name="eclipselink.ddl-generation.output-mode" value="both"/>
+      <property name="eclipselink.logging.level.sql" value="FINE"/>
+      <property name="eclipselink.logging.parameters" value="true"/>
+    </properties>
+  </persistence-unit>
+</persistence>

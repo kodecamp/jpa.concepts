@@ -1,0 +1,18 @@
+Application offers many COURSES
+                        
+    Every COURSE is divided into SEMESTERS
+    Every COURSE contains many SUBJECTS -> CHAPTERS -> STUDY_MATERIAL
+                                                       1. VIDEO 
+                                                       2. TEXT
+                                                       3. EXERCISES
+                                                            1. QUESTIONS AND ANSWERS
+                                        
+
+Two types of USERS
+    1. ANONYMOUS USERS
+    This type of users can only access the free courses.
+    2. REGISTERED USERS(PAID USERS)
+
+ 
+
+
